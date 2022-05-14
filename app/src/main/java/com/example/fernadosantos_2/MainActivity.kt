@@ -1,7 +1,6 @@
 package com.example.fernadosantos_2
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
@@ -40,7 +39,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    CreateBizCard()
+                    CreateProfileCard()
 
                 }
             }
@@ -50,7 +49,7 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun CreateBizCard() {
+fun CreateProfileCard() {
     val buttonClickedState = remember {
         mutableStateOf(false)
     }
@@ -98,6 +97,8 @@ fun CreateBizCard() {
     }
 
 }
+
+
 @Composable
 fun Content(){
     Box(modifier = Modifier
